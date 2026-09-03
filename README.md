@@ -1,29 +1,36 @@
-# 👋 Olá! Eu sou o Lucas
+👋 Olá! Eu sou o Lucas
 
-🎓 Estudante de **Análise e Desenvolvimento de Sistemas**  
-💻 Interessado em desenvolvimento web e aplicações em Python  
+🎓 Estudante de Análise e Desenvolvimento de Sistemas
+💻 Desenvolvedor em formação, apaixonado por tecnologia e programação
 📍 São Paulo - SP, Brasil
 
----
+🚀 Sobre mim
 
-## 🚀 Sobre mim
-Sou estudante de ADS com foco em aprender e evoluir como desenvolvedor. Tenho experiência com **Python**, **JavaScript**, **HTML** e **CSS**, e gosto de criar projetos que misturam lógica e criatividade.  
-Atualmente, estou desenvolvendo pequenos sistemas e aprendendo mais sobre o funcionamento do back-end e front-end.
+Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente focado em aprimorar minhas habilidades como desenvolvedor e construir uma base sólida em tecnologia.
 
----
+Tenho experiência e interesse em Python, React, JavaScript, MySQL e Power BI, buscando sempre transformar ideias em projetos funcionais e aprender novas tecnologias durante o processo.
 
-## 🛠️ Tecnologias
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+Gosto de desafios que envolvem lógica, resolução de problemas e criatividade. Atualmente, venho aprofundando meus conhecimentos tanto em Front-end quanto em Back-end, buscando compreender cada vez melhor como as aplicações são desenvolvidas e integradas.
 
----
+🛠️ Tecnologias e Ferramentas
+<div align="left"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" alt="Python"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40" alt="React"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40" alt="CSS3"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" height="40" alt="MySQL"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" height="40" alt="Git"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40" height="40" alt="GitHub"/> </div> <br>
 
-## 🎯 Objetivo
-Busco uma oportunidade de **estágio em tecnologia**, onde eu possa colocar em prática o que aprendo e continuar crescendo como desenvolvedor.
 
----
+🎯 Objetivo
 
-## 📫 Contato
-📧 **Email:** lucashasfj2006@gmail.coom
+Meu objetivo é conquistar uma oportunidade de estágio na área de tecnologia, onde eu possa aplicar meus conhecimentos em projetos reais, desenvolver novas habilidades e aprender com profissionais da área.
+
+Busco crescer constantemente como desenvolvedor, contribuindo com a equipe e transformando cada desafio em uma oportunidade de aprendizado.
+
+📚 Atualmente estudando<br>
+🐍 Desenvolvimento de aplicações com Python<br>
+⚛️ Desenvolvimento de interfaces com React<br>
+🔙 Conceitos de Back-end e APIs<br>
+🗄️ Banco de dados e MySQL<br>
+📊 Análise e visualização de dados com Power BI<br>
+🔧 Boas práticas de desenvolvimento e Git/GitHub<br>
+📫 Entre em contato<br>
+
+📧 E-mail: lucashasfj2006@gmail.com
+
+⭐ Sempre aprendendo, desenvolvendo e buscando evoluir um pouco mais a cada projeto.
