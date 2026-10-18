@@ -1,14 +1,14 @@
 👋 Olá! Eu sou o Lucas
 
 🎓 Estudante de Análise e Desenvolvimento de Sistemas
-💻 Desenvolvedor em formação, apaixonado por tecnologia e programação
+💻 Desenvolvedor em formação, apaixonado por tecnologia, programação e por criar soluções digitais que facilitam o dia a dia
 📍 São Paulo - SP, Brasil
 
 🚀 Sobre mim
 
-Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente focado em aprimorar minhas habilidades como desenvolvedor e construir uma base sólida em tecnologia.
+Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente focado em aprimorar minhas habilidades como desenvolvedor e construir uma base sólida em tecnologia. Sou apaixonado por criar soluções digitais que facilitam o dia a dia das pessoas através de códigos limpos e funcionais.
 
-Tenho experiência e interesse em Python, React, JavaScript, MySQL e Power BI, buscando sempre transformar ideias em projetos funcionais e aprender novas tecnologias durante o processo.
+Tenho experiência e interesse em Python, React, JavaScript, MySQL e Power BI, buscando sempre transformar ideias em projetos reais e aprender novas tecnologias durante o processo.
 
 Gosto de desafios que envolvem lógica, resolução de problemas e criatividade. Atualmente, venho aprofundando meus conhecimentos tanto em Front-end quanto em Back-end, buscando compreender cada vez melhor como as aplicações são desenvolvidas e integradas.
 
