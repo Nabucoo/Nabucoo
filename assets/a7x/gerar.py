@@ -7,10 +7,10 @@ OUT = sys.argv[1]
 FONT = sys.argv[2]
 os.makedirs(OUT, exist_ok=True)
 
-LIGHT = "#EDE3FB"   # osso / caveira
-DARK = "#14061F"    # contorno / olhos
-LAV = "#B48CE8"     # doodles sobre o banner
-MID = "#8A5CC7"     # elementos sobre fundo transparente (claro e escuro)
+LIGHT = "#FFFFFF"   # osso / caveira
+DARK = "#000000"    # contorno / olhos
+LAV = "#FFFFFF"     # doodles sobre o banner
+MID = "#FFFFFF"     # elementos sobre fundo transparente (claro e escuro)
 
 font = TTFont(FONT)
 gs = font.getGlyphSet()
@@ -123,10 +123,9 @@ def write(name, content):
 
 
 BG = ('<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">'
-      '<stop offset="0" stop-color="#0D0D0D"/><stop offset="0.6" stop-color="#2A0A3D"/>'
-      '<stop offset="1" stop-color="#4B0082"/></linearGradient>'
+      '<stop offset="0" stop-color="#000000"/><stop offset="1" stop-color="#000000"/></linearGradient>'
       '<filter id="glow" x="-20%" y="-40%" width="140%" height="180%">'
-      '<feGaussianBlur stdDeviation="6" result="b"/><feFlood flood-color="#9B5DE5" flood-opacity="0.8"/>'
+      '<feGaussianBlur stdDeviation="6" result="b"/><feFlood flood-color="#FFFFFF" flood-opacity="0.35"/>'
       '<feComposite in2="b" operator="in" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge></filter>')
 
 # ---------- header ----------
@@ -155,7 +154,7 @@ lines = ["Estudante de Análise e Desenvolvimento de Sistemas", "Desenvolvedor e
 TW, TH, DUR = 1000, 70, 12
 parts, clips = [], []
 for i, ln in enumerate(lines):
-    g, w = text_path(ln, 36, TW / 2, 48, "#A77BD9")
+    g, w = text_path(ln, 36, TW / 2, 48, "#FFFFFF")
     x0 = TW / 2 - w / 2
     a, b = i / 3, (i + 1) / 3
     kt = sorted({0, a, a + 0.1, b - 0.05, b, 1})
@@ -165,15 +164,15 @@ for i, ln in enumerate(lines):
                  f'<animate attributeName="width" dur="{DUR}s" repeatCount="indefinite" calcMode="linear" '
                  f'keyTimes="{";".join(f"{t:.4f}" for t in kt)}" values="{";".join(f"{v:.1f}" for v in vals)}"/></rect></clipPath>')
     parts.append(f'<g clip-path="url(#c{i})">{g}</g>')
-write("typing.svg", svg(TW, TH, "".join(parts), "".join(clips)))
+write("typing.svg", svg(TW, TH, f'<rect x="1" y="1" width="{TW-2}" height="{TH-2}" rx="14" fill="#000000"/>' + "".join(parts), "".join(clips)))
 
 # ---------- divider ----------
 DW, DH = 1000, 60
-body = (f'<path d="M20 30 L410 30 M590 30 L980 30" stroke="{MID}" stroke-width="3" stroke-linecap="round"/>'
+body = (f'<rect x="0" y="0" width="{DW}" height="{DH}" rx="14" fill="#000000"/><path d="M45 30 L410 30 M590 30 L955 30" stroke="{MID}" stroke-width="3" stroke-linecap="round"/>'
         f'<g filter="url(#rough)">'
         + place(skull_bones(), 500, 30, 54) + place(skull(), 440, 30, 30, -12) + place(skull(), 560, 30, 30, 12)
         + place(star(MID), 380, 30, 16) + place(star(MID), 620, 30, 16)
-        + place(lightning(MID), 20, 30, 22, 20) + place(lightning(MID), 980, 30, 22, -20)
+        + place(lightning(MID), 30, 30, 22, 20) + place(lightning(MID), 970, 30, 22, -20)
         + "</g>")
 write("divider.svg", svg(DW, DH, body))
 
