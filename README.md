@@ -34,6 +34,43 @@ Gosto de desafios que envolvem lógica, resolução de problemas e criatividade.
 
 <img src="assets/a7x/divider-3.svg" width="100%"/>
 
+## <img src="assets/a7x/icon-projetos.svg" width="34" align="center"/> 📂 Projetos em destaque
+
+Alguns dos projetos que desenvolvi, colocando em prática o que venho aprendendo:
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/Nabucoo/Queroae"><img src="assets/a7x/projeto-queroae.svg" width="100%" alt="QueroAê"/></a>
+
+🎁 **QueroAê**
+
+Plataforma de listas de presentes para grupos de família e amigos. Cada pessoa monta a lista do que gostaria de ganhar e os outros marcam o que vão comprar, sem que o dono da lista saiba quem escolheu o quê. Assim você ganha o que queria e a surpresa continua garantida.
+
+<img src="https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/Vite-000000?style=for-the-badge&logo=vite&logoColor=white"/> <img src="https://img.shields.io/badge/Tailwind_CSS-000000?style=for-the-badge&logo=tailwindcss&logoColor=white"/> <img src="https://img.shields.io/badge/Supabase-000000?style=for-the-badge&logo=supabase&logoColor=white"/>
+
+🔗 [Acessar o site](https://queroae.vercel.app) · 📁 [Repositório](https://github.com/Nabucoo/Queroae)
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://github.com/Nabucoo/SimulaFin"><img src="assets/a7x/projeto-simulafin.svg" width="100%" alt="SimulaFin"/></a>
+
+📈 **SimulaFin**
+
+Projeto em Java com dois programas: um gerador de transações financeiras sintéticas em CSV e um processador que calcula análises sobre esses arquivos, em modo sequencial ou paralelo. Os dados são artificiais e servem para desenvolvimento, demonstrações e testes de desempenho.
+
+<img src="https://img.shields.io/badge/Java_21-000000?style=for-the-badge&logo=openjdk&logoColor=white"/> <img src="https://img.shields.io/badge/Programação_Paralela-000000?style=for-the-badge"/> <img src="https://img.shields.io/badge/CSV-000000?style=for-the-badge"/>
+
+📁 [Repositório](https://github.com/Nabucoo/SimulaFin)
+
+</td>
+</tr>
+</table>
+
+<img src="assets/a7x/divider-6.svg" width="100%"/>
+
 ## <img src="assets/a7x/icon-objetivo.svg" width="34" align="center"/> 🎯 Objetivo
 
 <img src="assets/a7x/card-objetivo.svg" width="150" align="right"/>
