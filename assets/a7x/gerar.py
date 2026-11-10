@@ -295,4 +295,53 @@ fx = [place(guitar(), 470, 92, 150, -32), place(guitar(), 530, 92, 150, 32), pla
       place(eye(), 400, 160, 34), place(eye(), 600, 160, 34)]
 write("footer.svg", svg(FW, FH, f'<rect x="2" y="2" width="{FW-4}" height="{FH-4}" rx="22" fill="{K}" stroke="{W}" stroke-width="3"/>'
                                 f'<g filter="url(#rough)">{"".join(fx)}</g>'))
+# ---------------- projetos ----------------
+def gift():
+    return (f'<path d="M38 34 C22 20 16 34 30 38 Z M62 34 C78 20 84 34 70 38 Z" fill="none" stroke="{W}" stroke-width="5" stroke-linejoin="round"/>'
+            f'<rect x="20" y="50" width="60" height="42" fill="{W}" stroke="{K}" stroke-width="3"/>'
+            f'<rect x="14" y="36" width="72" height="16" fill="{W}" stroke="{K}" stroke-width="3"/>'
+            f'<rect x="45" y="36" width="10" height="56" fill="{K}"/>'
+            f'<path d="M50 36 L44 26 M50 36 L56 26" stroke="{W}" stroke-width="4" stroke-linecap="round"/>')
+
+
+def chart():
+    return (f'<path d="M12 90 L92 90 M12 90 L12 10" stroke="{W}" stroke-width="5" stroke-linecap="round"/>'
+            f'<g fill="{W}" stroke="{K}" stroke-width="3"><rect x="20" y="64" width="14" height="26"/>'
+            f'<rect x="40" y="50" width="14" height="40"/><rect x="60" y="36" width="14" height="54"/></g>'
+            f'<path d="M18 52 L40 34 L56 42 L86 14" fill="none" stroke="{W}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>'
+            f'<path d="M72 13 L87 13 L87 28" fill="none" stroke="{W}" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>')
+
+
+def coins():
+    out = []
+    for i, y in enumerate((80, 66, 52, 38)):
+        out.append(f'<ellipse cx="50" cy="{y+6}" rx="32" ry="11" fill="{W}" stroke="{K}" stroke-width="3"/>'
+                   f'<ellipse cx="50" cy="{y}" rx="32" ry="11" fill="{W}" stroke="{K}" stroke-width="3"/>')
+    out.append(f'<text x="50" y="44" font-family="Georgia,serif" font-size="18" font-weight="bold" text-anchor="middle" fill="{K}">$</text>')
+    return "".join(out)
+
+
+def project_card(fname, title, left, right, extras):
+    PW, PH = 480, 190
+    size = 66
+    _, w = text_path(title, size, PW / 2, 0, W)
+    if w > 270:
+        size = size * 270 / w
+    t, _ = text_path(title, size, PW / 2, 96 + size * 0.33, W, 'filter="url(#glow)"')
+    body = (f'<rect x="2" y="2" width="{PW-4}" height="{PH-4}" rx="22" fill="{K}" stroke="{W}" stroke-width="3"/>'
+            f'<g filter="url(#rough)">{place(left, 58, 92, 82, -8)}{place(right, 422, 92, 82, 8)}{"".join(extras)}</g>{t}')
+    write(fname, svg(PW, PH, body))
+
+
+project_card("projeto-queroae.svg", "QueroAê", gift(), skull_bones(), [
+    place(heart(), 150, 160, 26, -10), place(heart(), 330, 160, 26, 10), place(star(), 120, 30, 18),
+    place(star(), 360, 28, 16), place(xmark(), 240, 30, 14), place(star(), 240, 166, 14),
+    place(flaming_heart(), 190, 34, 30), place(flaming_heart(), 290, 34, 30)])
+project_card("projeto-simulafin.svg", "SimulaFin", chart(), coins(), [
+    place(lightning(), 150, 160, 28, -12), place(lightning(), 330, 160, 28, 12), place(skull(), 240, 162, 30),
+    place(star(), 120, 30, 18), place(star(), 360, 28, 16), place(diamond(), 200, 30, 22), place(diamond(), 280, 30, 22)])
+write("icon-projetos.svg", badge(gift(), 70))
+write("divider-6.svg", strip([place(gift(), 500, 30, 46), place(chart(), 440, 30, 30), place(coins(), 560, 30, 30),
+                              place(star(), 380, 30, 16), place(star(), 620, 30, 16),
+                              place(flame(), 34, 30, 28), place(flame(), 966, 30, 28)]))
 print("ok")
