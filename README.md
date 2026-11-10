@@ -69,6 +69,9 @@ Projeto em Java com dois programas: um gerador de transações financeiras sint�
 
 </td>
 </tr>
+</table>
+
+<table>
 <tr>
 <td width="50%" valign="top">
 
