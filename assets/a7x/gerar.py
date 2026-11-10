@@ -321,12 +321,25 @@ def coins():
     return "".join(out)
 
 
+def play():
+    return (f'<rect x="8" y="22" width="84" height="58" rx="18" fill="{W}" stroke="{K}" stroke-width="3"/>'
+            f'<path d="M42 37 L64 51 L42 65 Z" fill="{K}" stroke="{K}" stroke-width="3" stroke-linejoin="round"/>'
+            f'<path d="M30 92 L70 92" stroke="{W}" stroke-width="5" stroke-linecap="round"/>')
+
+
+def headphone_skull():
+    return (place(skull(), 50, 56, 84)
+            + f'<path d="M14 54 C14 14 86 14 86 54" fill="none" stroke="{W}" stroke-width="7" stroke-linecap="round"/>'
+            f'<rect x="4" y="46" width="16" height="30" rx="7" fill="{W}" stroke="{K}" stroke-width="3"/>'
+            f'<rect x="80" y="46" width="16" height="30" rx="7" fill="{W}" stroke="{K}" stroke-width="3"/>')
+
+
 def project_card(fname, title, left, right, extras):
     PW, PH = 480, 190
     size = 66
     _, w = text_path(title, size, PW / 2, 0, W)
-    if w > 270:
-        size = size * 270 / w
+    if w > 245:
+        size = size * 245 / w
     t, _ = text_path(title, size, PW / 2, 96 + size * 0.33, W, 'filter="url(#glow)"')
     body = (f'<rect x="2" y="2" width="{PW-4}" height="{PH-4}" rx="22" fill="{K}" stroke="{W}" stroke-width="3"/>'
             f'<g filter="url(#rough)">{place(left, 58, 92, 82, -8)}{place(right, 422, 92, 82, 8)}{"".join(extras)}</g>{t}')
@@ -353,6 +366,11 @@ def queroae_card(logo_png):
             f'<g filter="url(#rough)">{"".join(doodles)}</g>{sticker}')
     write("projeto-queroae.svg", svg(PW, PH, body))
 
+
+project_card("projeto-ytmp3.svg", "YouTube MP3", play(), headphone_skull(), [
+    place(note(), 150, 34, 26, -12), place(note(), 330, 34, 26, 12), place(star(), 240, 26, 16),
+    place(flame(), 160, 164, 26, -6), place(flame(), 320, 164, 26, 6), place(guitar(), 240, 166, 30, 90),
+    place(lightning(), 112, 160, 22, -15), place(lightning(), 368, 160, 22, 15)])
 
 if len(sys.argv) > 3:
     queroae_card(sys.argv[3])
