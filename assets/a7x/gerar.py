@@ -1,6 +1,6 @@
 """Gera os SVGs do tema preto e branco com caveiras (doodle) para o README.
 
-Uso: python3 gerar.py <pasta_saida> <fonte_gotica.woff2>
+Uso: python3 gerar.py <pasta_saida> <fonte_gotica.woff2> [logo_queroae_horizontal.png]
 """
 import os, sys
 from fontTools.ttLib import TTFont
@@ -333,10 +333,29 @@ def project_card(fname, title, left, right, extras):
     write(fname, svg(PW, PH, body))
 
 
-project_card("projeto-queroae.svg", "QueroAê", gift(), skull_bones(), [
-    place(heart(), 150, 160, 26, -10), place(heart(), 330, 160, 26, 10), place(star(), 120, 30, 18),
-    place(star(), 360, 28, 16), place(xmark(), 240, 30, 14), place(star(), 240, 166, 14),
-    place(flaming_heart(), 190, 34, 30), place(flaming_heart(), 290, 34, 30)])
+def queroae_card(logo_png):
+    """Card do QueroAê com a logo oficial num 'adesivo' branco (a logo tem o nome em letra escura)."""
+    import base64
+    b64 = base64.b64encode(open(logo_png, "rb").read()).decode()
+    PW, PH = 480, 190
+    doodles = [place(skull_bones(mohawk), 52, 96, 84, -10), place(skull_bones(), 428, 96, 84, 10),
+               place(heart(), 150, 168, 26, -10), place(heart(), 330, 168, 26, 10), place(star(), 112, 28, 18),
+               place(star(), 368, 26, 16), place(xmark(), 240, 22, 14), place(star(), 240, 172, 14),
+               place(flaming_heart(), 186, 26, 28), place(flaming_heart(), 294, 26, 28)]
+    # adesivo: borda branca grossa + contorno preto, levemente torto
+    sticker = (f'<g transform="rotate(-3 240 97)">'
+               f'<rect x="104" y="50" width="272" height="94" rx="16" fill="{W}" stroke="{K}" stroke-width="3"/>'
+               f'<rect x="98" y="44" width="284" height="106" rx="20" fill="none" stroke="{W}" stroke-width="3"/>'
+               # recorte da área útil da logo (1200x400 com margem transparente)
+               f'<svg x="112" y="60" width="256" height="74" viewBox="160 80 900 260" preserveAspectRatio="xMidYMid meet">'
+               f'<image width="1200" height="400" href="data:image/png;base64,{b64}"/></svg></g>')
+    body = (f'<rect x="2" y="2" width="{PW-4}" height="{PH-4}" rx="22" fill="{K}" stroke="{W}" stroke-width="3"/>'
+            f'<g filter="url(#rough)">{"".join(doodles)}</g>{sticker}')
+    write("projeto-queroae.svg", svg(PW, PH, body))
+
+
+if len(sys.argv) > 3:
+    queroae_card(sys.argv[3])
 project_card("projeto-simulafin.svg", "SimulaFin", chart(), coins(), [
     place(lightning(), 150, 160, 28, -12), place(lightning(), 330, 160, 28, 12), place(skull(), 240, 162, 30),
     place(star(), 120, 30, 18), place(star(), 360, 28, 16), place(diamond(), 200, 30, 22), place(diamond(), 280, 30, 22)])
