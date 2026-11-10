@@ -20,11 +20,13 @@
 
 <img src="assets/a7x/card-sobre.svg" width="190" align="right"/>
 
-Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente focado em aprimorar minhas habilidades como desenvolvedor e construir uma base sólida em tecnologia. Sou apaixonado por criar soluções digitais que facilitam o dia a dia das pessoas através de códigos limpos e funcionais.
+Desde criança sempre fui muito conectado com a tecnologia: mexia muito nas redes sociais, jogava muitos joguinhos, assistia muitos vídeos no YouTube e vivia fuçando a internet. Junto com isso, meus pais sempre me aconselharam a estudar para fazer algo que não exigisse tanto fisicamente. Eu via de perto o quão difícil é esse tipo de trabalho e sempre valorizei quem faz, mas sabia que não era pra mim. Foi em ADS que encontrei o caminho que juntava essas duas vontades.
+
+Gosto de entender os processos como um todo, não só a parte pela qual sou responsável. Nos trabalhos em grupo, sempre assumo a organização das tarefas, ajudo a equipe e defino o que cada um pode fazer. Foi assim que percebi que gosto de transformar ideias em um plano de execução.
 
 Tenho experiência e interesse em Python, React, JavaScript, MySQL e Power BI, buscando sempre transformar ideias em projetos reais e aprender novas tecnologias durante o processo.
 
-Gosto de desafios que envolvem lógica, resolução de problemas e criatividade. Atualmente, venho aprofundando meus conhecimentos tanto em Front-end quanto em Back-end, buscando compreender cada vez melhor como as aplicações são desenvolvidas e integradas.
+Também tenho uma mentalidade resolutiva, que ADS só fez crescer. Um exemplo: meu tio queria levar as músicas de rock e metal que ele gosta no cartão de memória para ouvir no carro durante uma viagem, mas não sabia como. Percebi que dava para resolver isso com programação e desenvolvi um [programa em Python com interface gráfica](https://github.com/Nabucoo/YoutubeDownloaderMP3) que converte links do YouTube em .MP3. Foi muito legal ver algo que eu construí atender a necessidade real de uma pessoa.
 
 <img src="assets/a7x/divider-2.svg" width="100%"/>
 
@@ -66,6 +68,22 @@ Projeto em Java com dois programas: um gerador de transações financeiras sint�
 📁 [Repositório](https://github.com/Nabucoo/SimulaFin)
 
 </td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://github.com/Nabucoo/YoutubeDownloaderMP3"><img src="assets/a7x/projeto-ytmp3.svg" width="100%" alt="YouTube Downloader MP3"/></a>
+
+🎵 **YouTube Downloader MP3**
+
+Programa em Python com interface gráfica que pega links do YouTube e converte em arquivos .MP3. Criei para ajudar meu tio a levar as músicas de rock e metal que ele gosta no cartão de memória para ouvir no carro.
+
+<img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Tkinter-000000?style=for-the-badge"/> <img src="https://img.shields.io/badge/yt--dlp-000000?style=for-the-badge&logo=youtube&logoColor=white"/>
+
+📁 [Repositório](https://github.com/Nabucoo/YoutubeDownloaderMP3)
+
+</td>
+<td width="50%" valign="top"></td>
 </tr>
 </table>
 
